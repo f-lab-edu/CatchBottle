@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CatchBottle" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/brand_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">@font/pretendard_r</item>
+    </style>
+
+    <style name="Theme.CatchBottle" parent="Base.Theme.CatchBottle" />
+
+    <!-- <style name="Theme.App.Splash" parent="Theme.SplashScreen">-->
+    <style name="Theme.App.Splash" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/brand_light</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="s">3000</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@drawable/logo_icon_small</item>
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="s">@color/brand_light</item>
+        <item name="android:windowSplashScreenBrandingImage" tools:targetApi="s">@drawable/logo_text</item>
+        <item name="postSplashScreenTheme">@style/Theme.CatchBottle</item>
+
+        <!-- 필요시 다크모드 같은 상황 고려. Status bar and Nav bar configs -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+</resources>
